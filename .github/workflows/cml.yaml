@@ -24,6 +24,8 @@ jobs:
 
             cml-publish residuals.png --md >> readme.md
 
-            
+            cml-send-comment readme.md
+
+
 
 
