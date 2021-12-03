@@ -18,6 +18,12 @@ jobs:
             cat result.txt
 
             echo "## RESULT PRODUCED BY RUNNING THE MODEL" > readme.md
-            cat metrics.md >> readme.md
+            cat metrics.txt >> readme.md
+
+            cml-publish feature_importance.png --md >> readme.md
+
+            cml-publish residuals.png --md >> readme.md
 
             
+
+
